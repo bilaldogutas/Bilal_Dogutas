@@ -110,7 +110,7 @@ elif the_selection == 5:
     odd_count = 0
     running = True
     print("**Stop entering numbers with entering '-1'.**")
-    while (running):
+    while (running):  # loop going to run until running is false
         number = int(input("Enter a number: "))
         if number % 2 == 0:  # if remainder is 0 it is even
             even_count += 1  # even accumulator
