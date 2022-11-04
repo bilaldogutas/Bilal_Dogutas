@@ -6,6 +6,7 @@
 ***New Features**
 -Frog calculation that print as many as frog that you want
 -Student average calculator which can calculate averages of three students
+-Counting even and odd numbers
 '''
 
 print("******FUNCTIONAL CALCULATOR******")  # headline
@@ -13,6 +14,7 @@ print("\n1-Numerical Calculation")
 print("2-String Calculation")
 print("3-Frog Calculator")
 print("4-Student Average Calculator")
+print("5-Even and Odd Number Accumulator")
 the_selection = int(input(
     "\nWhich calculation do you want to do?\nSelect one=>"))
 # In this part code gets the style of the calculation
@@ -103,5 +105,19 @@ elif the_selection == 4 or (not (3 and 2)):  # student average calculator part
     print("Name:", student_names[2])
     print("Average:", format(averages[2], ".2f"))
     # printing the student names and grades in two decimal places
+elif the_selection == 5:
+    even_count = 0
+    odd_count = 0
+    running = True
+    print("**Stop entering numbers with entering '-1'.**")
+    while (running):
+        number = int(input("Enter a number: "))
+        if number % 2 == 0:  # if remainder is 0 it is even
+            even_count += 1  # even accumulator
+        elif number == -1:
+            running = False  # when entered '-1' program stops
+        else:
+            odd_count += 1  # odd accumulator
+    print("Total of even numbers:", even_count, "\nTotal of odd numbers:", odd_count)
 else:
-    print("!!!You have to choose 1, 2,3 or 4!!!")  # Input must be 1, 2, 3 or 4.
+    print("!!!You have to choose 1, 2, 3, 4 or 5!!!")  # Input must be 1, 2, 3, 4 or 5.
