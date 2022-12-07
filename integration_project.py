@@ -1,8 +1,9 @@
-# BILAL DOGUTAS
 '''
-**FUNCTIONAL CALCULATOR**
+___author___ = "Bilal Dogutas"
+**MULTIFUNCTIONAL CALCULATOR**
 -This calculator can do calculation with 7 numerical operators.
--Also can do the string calculation such as concatenation and multiplicate the words.
+-Also can do the string calculation such as concatenation and
+multiplicate the words.
 ***New Features**
 -Frog calculation that print as many as frog that you want
 -Student average calculator which can calculate averages of three students
@@ -17,9 +18,10 @@ print("4-Student Average Calculator")
 print("5-Even and Odd Number Accumulator")
 the_selection = int(input(
     "\nWhich calculation do you want to do?\nSelect one=>"))
-# In this part code gets the style of the calculation
+# In this part code gets the choice of the calculation
 
 if the_selection == 1:  # numerical calculation part
+
     print("\nNumerical Calculation")
     num1 = float(input("\nEnter the first number: "))
     num2 = float(input("Enter the second number: "))
@@ -36,7 +38,8 @@ if the_selection == 1:  # numerical calculation part
     elif selected_calculation1 == 2:
         print("Answer is:", format(num1 - num2, ".2f"), sep='')  # substraction
     elif selected_calculation1 == 3:
-        print("Answer is:", format(num1 * num2, ".2f"), sep='')  # multiplication
+        print("Answer is:", format(num1 * num2, ".2f"),
+              sep='')  # multiplication
     elif selected_calculation1 == 4:
         print("Answer is:", format(num1 / num2, ".2f"), sep='')  # division
     elif selected_calculation1 == 5:
@@ -44,14 +47,17 @@ if the_selection == 1:  # numerical calculation part
     elif selected_calculation1 == 6:
         print("Answer is:", format(num1 % num2, ".2f"), end='')  # remainder
     elif selected_calculation1 == 7:
-        print("Answer is:", format(num1 // num2, ".2f"), end='')  # floor division
+        print("Answer is:", format(num1 // num2, ".2f"),
+              end='')  # floor division
     else:
         print("!!!You typed a wrong number!!!")  # The input must be 1 to 7.
 
 elif the_selection == 2:  # string calculation part
+
     print("\nString calculation")
     print("\n1-Concatenation\n2-Multiplication")
-    selected_calculation2 = int(input("What calculation do you want to do?\nSelect one=> "))
+    selected_calculation2 = int(
+        input("What calculation do you want to do?\nSelect one=> "))
 
     if selected_calculation2 == 1:
         variable1 = input("\nEnter the first variable(Word or a number): ")
@@ -64,15 +70,26 @@ elif the_selection == 2:  # string calculation part
     else:
         print("!!!You have to choose 1 or 2!!!")
         # Input must be 1 or 2 so that's a kind of an error for my calculator.
+
 elif the_selection == 3 and (the_selection != 4):  # frog calculator part
+
     def frog(dots):
-        print(dots * ("\n   @..@\n  (----)\n ( >___< )\n ^^ == ^^"))
+        """
+        This function prints as many as number recieved from the user.
+
+        :param dots: this parameter is the number of the frogs to print
+        """
+        frogs = print(dots * ("\n   @..@\n  (----)\n ( >___< )\n ^^ == ^^"))
         # Printing the Frog dots as many as number is
+
+        return frogs
+        # returning the print value
 
 
     def main():  # Asks user about how many frogs do you want to print
         number = int(input("How many frogs? "))
-        frog(number)  # Calls the frog()
+        frog(number)
+        # Calls the frog()
 
 
     main()
@@ -84,7 +101,8 @@ elif the_selection == 4 or (not (3 and 2)):  # student average calculator part
     print("You can only enter three students!!")
     for student in range(3):  # getting the names of the students 3 times
         name = input("Name of the Student: ")
-        student_names.append(name)  # adding the name of the students in first list
+        student_names.append(
+            name)  # adding the name of the students in first list
 
         for grades in range(1):  # getting the grades of the students
             grade1 = int(input("First grade of the student: "))
@@ -95,22 +113,28 @@ elif the_selection == 4 or (not (3 and 2)):  # student average calculator part
             averages.append(answer)
             # adding the averages of the students in second list
 
-            if (grade1 or grade2 or grade3) < 0 or (grade1 or grade2 or grade3) > 100:
-                print("Please enter a valid grade!!!")  # grades must between 0 and 100
+            if (grade1 or grade2 or grade3) < 0 or (grade1 or grade2 or
+                                                    grade3) > 100:
+                print("Please enter a valid grade!!!")
+                # grades must between 0 and 100
 
-    print("\nName:", student_names[0])  # picking the names from the list ([0]=1. [1]=2.)
+    print("\nName:", student_names[0])
+    # picking the names from the list ([0]=1. [1]=2.)
     print("Average:", format(averages[0], ".2f"))
     print("Name:", student_names[1])
     print("Average", format(averages[1], ".2f"))
     print("Name:", student_names[2])
     print("Average:", format(averages[2], ".2f"))
     # printing the student names and grades in two decimal places
+
 elif the_selection == 5:
     even_count = 0
     odd_count = 0
     running = True
     print("**Stop entering numbers with entering '-1'.**")
+
     while (running):  # loop going to run until running is false
+
         number = int(input("Enter a number: "))
         if number % 2 == 0:  # if remainder is 0 it is even
             even_count += 1  # even accumulator
@@ -118,6 +142,9 @@ elif the_selection == 5:
             running = False  # when entered '-1' program stops
         else:
             odd_count += 1  # odd accumulator
-    print("Total of even numbers:", even_count, "\nTotal of odd numbers:", odd_count)
+    print("Total of even numbers:", even_count,
+          "\nTotal of odd numbers:", odd_count)
+
 else:
-    print("!!!You have to choose 1, 2, 3, 4 or 5!!!")  # Input must be 1, 2, 3, 4 or 5.
+    print("!!!You have to choose 1, 2, 3, 4 or 5!!!")
+    # Input must be 1, 2, 3, 4 or 5.
