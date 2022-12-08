@@ -1,5 +1,7 @@
 # Bilal Dogutas Projects
 
+Hi! This repository is for my future projects.
+
 ## 1-Integration Project
 
 **MULTIFUNCTIONAL CALCULATOR**
