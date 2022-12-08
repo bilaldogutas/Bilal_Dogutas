@@ -10,7 +10,7 @@ multiplicate the words.
 -Counting even and odd numbers
 '''
 
-print("******FUNCTIONAL CALCULATOR******")  # headline
+print("******MULTIFUNCTIONAL CALCULATOR******")  # headline
 print("\n1-Numerical Calculation")
 print("2-String Calculation")
 print("3-Frog Calculator")
