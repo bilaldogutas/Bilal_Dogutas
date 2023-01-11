@@ -1,3 +1,22 @@
+# Bilal Dogutas Projects
+
+Hi! This repository is for my future projects.
+
+## 1-Integration Project
+
+**MULTIFUNCTIONAL CALCULATOR**
+
+-This calculator can do calculation with 7 numerical operators.
+-Also can do the string calculation such as concatenation and
+multiplicate the words.
+
+**New Features:**
+
+-Frog calculation that print as many as frog that you want
+-Student average calculator which can calculate averages of three students
+-Counting even and odd numbers
+>[Project File](https://github.com/bilaldogutas/Integration-Project-COP1500/blob/main/integration_project.py)
+
 ![bilaldogutas's GitHub stats](https://github-readme-stats.vercel.app/api?username=bilaldogutas&show_icons=true&theme=tokyonight)
 
 [![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=bilaldogutas&theme=tokyonight&hide_border=true&border_radius=5&date_format=M%20j%5B%2C%20Y%5D)](https://git.io/streak-stats)
