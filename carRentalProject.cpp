@@ -192,7 +192,7 @@
 
                 // reset user's booked car
                 currentUser.bookedCarModel.clear();
-                std::cout << "Thank you for returning the car.\n";
+                std::cout << "Thank you for returning the car " << currentUser.username << std::endl;
 
                 return; // return and stop the function
             }
