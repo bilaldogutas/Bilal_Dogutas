@@ -2,11 +2,11 @@
 
 Hi! This repository is for my future projects.
 
-Car Rental Project for COP 3003:
-File names:
-main.cpp
-carRentalSystem.cpp
-carRentalSystem.h
+Car Rental Project for COP 3003: <br />
+File names: <br />
+main.cpp  <br />
+carRentalSystem.cpp <br />
+carRentalSystem.h <br />
 
 
 
